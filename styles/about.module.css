@@ -1,0 +1,25 @@
+.aboutContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.aboutHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.aboutHeader img:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../public/saslogo.webp");
+    filter: blur(30px);
+    position: relative;
+    transform: translate(10px, -10px);
+}

@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    transition: .05s;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background: white;
+}
+
+:root {
+    --white: #FFFFFF;
+    --red: #c73541;
+    --gray: #5a6c8f;
+    --darkblue: #1c3862;
+    --clearblue: #30bced;
+    --grayblue: #afd4e4;
+    --black: #000000;
+}
