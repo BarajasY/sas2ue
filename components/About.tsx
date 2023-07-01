@@ -8,8 +8,10 @@ import { motion, useAnimate } from "framer-motion";
 
 const About = () => {
   const [Count, setCount] = useState(0);
+  const [MapCount, setMapCount] = useState(0)
   const [scope, animate] = useAnimate();
   const [scope2, animate2] = useAnimate();
+  const [Map, animate3] = useAnimate();
 
   const decreaseCount = () => {
     animate2(scope2.current, { opacity: 0, x: 20 });
@@ -40,6 +42,21 @@ const About = () => {
       animate(scope.current, { opacity: 1, x: 0 });
     }, 300);
   };
+
+  const handleMapChange = () => {
+    animate(Map.current, {opacity: 0, x: -20})
+
+    setTimeout(() => {
+      if(MapCount === 1) {
+        setMapCount(0)
+      } else {
+        setMapCount(1)
+      }
+      animate(Map.current, {opacity: 1, x:0})
+    }, 500)
+
+
+  }
 
   return (
     <div className={style.aboutContainer}>
@@ -91,8 +108,12 @@ const About = () => {
           <section>
             <p>SAS2: Unreal Engine</p>
             <article>
-              <Image src={newMaps[1]} alt="New Map" />
-              <Image src={newMaps[0]} alt="New Map" id={style.backMap}/>
+              <div ref={Map}>
+                <Image src={newMaps[MapCount]} alt="Lights Off"/>
+              </div>
+            </article>
+            <article className={style.MapsButton} onClick={() => handleMapChange()}>
+              <button>{MapCount === 0 ? "Lights On" : "Lights Off"}</button>
             </article>
           </section>
         </div>
