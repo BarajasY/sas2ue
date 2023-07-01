@@ -4,6 +4,7 @@
     transition: .05s;
     text-decoration: none;
     outline: none;
+    user-select: none;
 }
 
 body {

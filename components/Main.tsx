@@ -9,7 +9,7 @@ const Main = () => {
 
   setTimeout(() => {
     router.push("/about")
-  }, 1700)
+  }, 3000)
 
   return (
     <div className={style.mainContainer}>
@@ -20,7 +20,7 @@ const Main = () => {
         <motion.p
         initial={{opacity: 0, y: -10}}
         whileInView={{opacity: 1, y:0}}
-        transition={{delay: 1}}>In Unreal Engine</motion.p>
+        transition={{delay: 1.5}}>In Unreal Engine</motion.p>
     </div>
   )
 }

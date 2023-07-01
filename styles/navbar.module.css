@@ -1,0 +1,19 @@
+.navbarContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    color: var(--black);
+    z-index: 1;
+}
+
+.navbarIcon {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.navbarIcon:hover {
+    color: var(--white);
+    cursor: pointer;
+    background: var(--gray);
+}
