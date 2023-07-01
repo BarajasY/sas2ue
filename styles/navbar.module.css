@@ -5,10 +5,10 @@
     position: fixed;
     color: var(--black);
     z-index: 1;
+    padding: 10px;
 }
 
 .navbarIcon {
-    padding: 10px;
     font-size: 30px;
 }
 
@@ -16,4 +16,8 @@
     color: var(--white);
     cursor: pointer;
     background: var(--gray);
+}
+
+.navbarContainer a {
+    color: var(--black);
 }

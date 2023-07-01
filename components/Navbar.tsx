@@ -4,6 +4,7 @@ import React from 'react';
 import style from "@/styles/navbar.module.css";
 import {HiOutlineArrowSmLeft} from "react-icons/hi"
 import { usePathname, useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 
 const Navbar = () => {
@@ -19,7 +20,11 @@ const Navbar = () => {
       {pathname === "/" ?
         null
       :
+      <>
         <HiOutlineArrowSmLeft className={style.navbarIcon} onClick={() => router.back()}/>
+        <Link href="/why">Why?</Link>
+      </>
+
       }
     </motion.div>
   )

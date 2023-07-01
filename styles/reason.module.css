@@ -1,0 +1,15 @@
+.reasonContainer {
+    width: 100%;
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 991px) {
+    .reasonContainer {
+        height: 100vh;
+    }
+}

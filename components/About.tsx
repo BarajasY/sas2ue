@@ -44,7 +44,7 @@ const About = () => {
   };
 
   const handleMapChange = () => {
-    animate(Map.current, {opacity: 0, x: -20})
+    animate3(Map.current, {opacity: 0, x: -20})
 
     setTimeout(() => {
       if(MapCount === 1) {
@@ -52,7 +52,7 @@ const About = () => {
       } else {
         setMapCount(1)
       }
-      animate(Map.current, {opacity: 1, x:0})
+      animate3(Map.current, {opacity: 1, x:0})
     }, 500)
 
 
@@ -60,9 +60,18 @@ const About = () => {
 
   return (
     <div className={style.aboutContainer}>
-      <h1>Converting the Flash Player game into a 3D zombie shooter</h1>
-      <p>Models</p>
-      <div className={style.aboutModels}>
+      <motion.h1
+      initial={{opacity: 0, y: -30}}
+      whileInView={{opacity: 1, y: 0}}
+      >Converting the Flash Player game into a 3D zombie shooter</motion.h1>
+      <motion.p
+      initial={{opacity: 0, y: -30}}
+      whileInView={{opacity: 1, y: 0}}
+      >Models</motion.p>
+      <motion.div
+      initial={{opacity: 0, y: 30}}
+      whileInView={{opacity: 1, y: 0}}
+      className={style.aboutModels}>
         <div className={style.aboutZombies}>
           <h1>SAS2</h1>
           <section>
@@ -95,8 +104,11 @@ const About = () => {
             />
           </section>
         </div>
-      </div>
-      <div className={style.aboutMap}>
+      </motion.div>
+      <motion.div
+      initial={{opacity: 0, y: -30}}
+      whileInView={{opacity: 1, y:0}}
+      className={style.aboutMap}>
         <p>Map</p>
         <div className={style.Maps}>
           <section>
@@ -117,7 +129,7 @@ const About = () => {
             </article>
           </section>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

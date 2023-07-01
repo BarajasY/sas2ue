@@ -2,9 +2,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 130vh;
+    text-align: center;
 }
 
 .aboutContainer p {
@@ -88,36 +89,6 @@
     display: block;
 }
 
-.MapsButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.MapsButton p {
-    margin: 0px 5px 0px 5px;
-}
-
-.MapTrackActive {
-    border-radius: 20px;
-    width: 100px;
-    height: 30px;
-    border: 1px solid black;
-    background: var(--yellow);
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.MapTrackCircleActive {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    background: var(--orange);
-}
-
 .MapsButton button{
     padding: 10px;
     font-size: 15px;
@@ -130,4 +101,55 @@
     background: black;
     color: white;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+    .aboutModels, .Maps {
+        width: 100%;
+    }
+}
+
+/* @media only screen and (max-width: 750px) {
+    .aboutZombies section article img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Maps section article img {
+        width: 200px;
+        height: 200px;
+    }
+} */
+
+
+@media only screen and (max-width: 750px) {
+    .aboutContainer {
+        height: fit-content;
+    }
+
+    .aboutContainer h1 {
+        margin-top: 50px;
+    }
+
+    .aboutModels {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .aboutZombies {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutZombies section article img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .Maps {
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
 }

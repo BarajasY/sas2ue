@@ -1,0 +1,45 @@
+.imagesContainer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagesContainer h1 {
+    font-size: 20px;
+}
+
+.imagesContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagesContent img {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.imagesIcon {
+    font-size: 30px;
+}
+
+.imagesIcon:hover {
+    background: var(--gray);
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+    .imagesContent img {
+        width: 600px;
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .imagesContent img {
+        width: 400px;
+        height: 200px;
+    }
+}
