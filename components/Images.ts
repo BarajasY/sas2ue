@@ -1,5 +1,5 @@
 import baseZombie1 from "@/public/baseZombie1.webp"
-import baseZombie2 from "@/public/baseZombie2.webp"
+import baseZombie2 from "@/public/BaseZombie2.webp"
 import baseZombie3 from "@/public/baseZombie4.webp"
 import baseZombie4 from "@/public/baseZombie5.webp"
 import Zombie1 from "@/public/Zombie1.webp"
