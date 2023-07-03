@@ -5,7 +5,9 @@
 }
 
 .imagesContainer h1 {
-    font-size: 20px;
+    font-size: 36px;
+    color: var(--white);
+    margin-bottom: 20px;
 }
 
 .imagesContent {
@@ -25,7 +27,7 @@
 }
 
 .imagesIcon:hover {
-    background: var(--gray);
+    background: var(--darkbrown);
     color: var(--white);
     cursor: pointer;
 }

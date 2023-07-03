@@ -9,10 +9,10 @@
 
 .mainContainer h1{
     font-size: 50px;
-    color: var(--black);
+    color: var(--darkbrown);
 }
 
 .mainContainer p {
     font-size: 20px;
-    color: var(--darkblue);
+    color: var(--red);
 }

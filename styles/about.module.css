@@ -2,14 +2,27 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    height: 130vh;
+    height: fit-content;
     text-align: center;
 }
 
-.aboutContainer p {
+.modelsContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modelsContent h1 {
+    color: var(--darkbrown);
+}
+
+.modelsContent p {
+    color: var(--red);
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .aboutModels {
@@ -49,7 +62,7 @@
 
 .aboutIcon:hover {
     cursor: pointer;
-    background: var(--gray);
+    background: var(--darkbrown);
     color: var(--white);
 }
 
@@ -59,12 +72,22 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100vh;
+}
+
+.aboutMap h1{
+    color: var(--darkbrown);
+}
+
+.aboutMap p {
+    color: var(--red);
 }
 
 .Maps {
     width: 60%;
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
 }
 
 .Maps p {
@@ -94,12 +117,13 @@
     font-size: 15px;
     background: none;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid var(--darkbrown);
+    color: var(--white);
 }
 
 .MapsButton button:hover {
-    background: black;
-    color: white;
+    background: var(--red);
+    color: var(--white);
     cursor: pointer;
 }
 

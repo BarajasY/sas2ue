@@ -1,8 +1,10 @@
 import Navbar from '@/components/Navbar'
 import '../styles/globals.css'
-import { Lato } from 'next/font/google'
+import { Inter, Oswald } from 'next/font/google'
 
-const lato = Lato({ subsets: ['latin'], weight: ["900"] })
+const oswald = Oswald({ subsets: ['latin'], weight: ["700"] })
+const inter = Inter({ subsets: ['latin'], weight: ["900"] })
+
 
 export const metadata = {
   title: 'SAS2: Unreal Engine',
@@ -16,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={lato.className}>
+      <body className={inter.className}>
         <Navbar />
         {children}
       </body>

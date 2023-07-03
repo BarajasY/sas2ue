@@ -9,17 +9,20 @@
 }
 
 body {
-    background: white;
+    background: radial-gradient(circle at 0% 0%, rgba(249, 247, 235, 1) 0%, rgba(84, 68, 53, 1) 100%);
 }
 
 :root {
     --white: #FFFFFF;
     --red: #c73541;
+    --red2: #e0262e;
+    --darkbrown: #544435;
     --gray: #5a6c8f;
     --darkblue: #1c3862;
     --clearblue: #30bced;
     --grayblue: #afd4e4;
     --black: #000000;
-    --yellow: #ffac0f;
+    --yellow: #e7cc49;
     --orange: #d5672a;
+    --creme: #d2942a;
 }

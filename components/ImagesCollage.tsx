@@ -42,7 +42,7 @@ const ImagesCollage = () => {
     initial={{opacity: 0, y: -30}}
     whileInView={{opacity: 1, y:0}}
     className={style.imagesContainer}>
-      <h1>Images of the game</h1>
+      <h1>In game images</h1>
       <div className={style.imagesContent}>
         <MdArrowLeft className={style.imagesIcon} onClick={() => decreaseCount()}/>
         <article ref={scope}>
